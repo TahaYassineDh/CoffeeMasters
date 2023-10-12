@@ -1,0 +1,171 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+
+/* Header */
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #43281c;
+}
+
+header img {
+  width: 30px;
+  margin-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  color: #fbf2c0;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+/* Sections */
+.box {
+  border-radius: 15px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "items name" "items payment";
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  margin-top: 30px;
+}
+
+.items {
+  grid-area: items;
+
+  background-color: #eee1d5;
+}
+
+.name-for-order {
+  grid-area: name;
+  background-color: #eee1d5;
+}
+
+.payment {
+  grid-area: payment;
+  background-color: #eee1d5;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr 5fr;
+  margin: 10px auto;
+}
+
+.wrapper h4 {
+  font-weight: bold;
+}
+
+.wrapper .price {
+  font-weight: bold;
+  text-align: right;
+  padding-right: 40px;
+}
+
+.box-title {
+  font-weight: normal;
+  color: #885a2d;
+  margin-top: 20px;
+}
+
+.ingredients {
+  color: #b08968;
+  margin: 10px auto 10px 75px;
+}
+
+hr {
+  height: 1px;
+  border-color: #b08968;
+  width: 95%;
+  margin: 20px auto;
+}
+
+.box-title,
+.quantity {
+  margin-left: 20px;
+}
+
+.order:last-child {
+  margin-bottom: 50px;
+}
+
+.form-group {
+  position: relative;
+  width: 100%;
+  margin-top: 30px ;
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  color: #885a2d;
+  background-color: #eee1d5;
+  font-size: 11px;
+  position: absolute;
+  left: 25px;
+  top: -7px;
+  padding: 0 2px;
+  
+}
+  
+
+
+.form-group input {
+  background-color: rgba(0,0,0,0);
+  border: 2px #885a2d solid;
+  padding: 8px;
+  border-radius: 100px;
+  width: 95%;
+  text-indent: 18px;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+/* final order */
+
+.final-order ul li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.final-order {
+  width: 30%;
+  margin: auto;
+}
+
+.final-order ul {
+  margin-top: 30px;
+}
+
+button {
+  background-color: #deb993;
+  width: 80%;
+  height: 30px;
+  margin: auto;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  margin-left: 10%;
+}
+
